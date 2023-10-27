@@ -1,0 +1,236 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+/* Start Стили для текста  */
+
+.text__h2 {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+}
+
+.text__h3 {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #C4C4C4;
+}
+
+.text__h4 {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.text__p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #C4C4C4;
+}
+
+.text__p-reviews {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #C4C4C4;
+}
+
+:root {
+    --accent-color: #F7654A;
+    --dark-color: #404149;
+    --gray-color: #999999;
+    --white-color: #FFFFFF;
+    --background-color: #E5E5E5;
+}
+
+/* End Стили для текста  */
+
+/* Start header */
+
+.header {
+    min-height: 740px;
+    background-image: url(../images/first-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+
+.header__content {
+    padding-top: 20px;
+    margin-bottom: 112px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.burger__btn {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    padding: 0;
+    background-color: var(--accent-color);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.burger__line {
+    display: block;
+    width: 21px;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin-bottom: 4px;
+}
+
+.burger__line:last-child {
+    margin-bottom: 0;
+}
+
+.header__title {
+    font-weight: 500;
+    font-size: 64px;
+    text-align: center;
+    line-height: 95px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    max-width: 734px;
+    margin: 0 auto 17px;
+    color: var(--white-color);
+}
+
+.header__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 734px;
+    margin: 0 auto;
+    color: var(--white-color);
+}
+
+/* end header */
+
+
+/* Start abaut */
+
+.about {
+    min-height: 1080px;
+    position: relative;
+}
+.info {
+    max-width: 1110px;
+    width: 100%;
+    min-height: 300px;
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #F7F7F7;
+    padding: 57px 130px;
+}
+
+.about__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+.about__grid-item {
+    text-align: center;
+    width: 190px;
+
+}
+.about__h4 {
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 107px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F7654A;
+}
+.about__h5 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+
+
+}
+.about__p6 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+/* End abaut */
+
+
+
+
+@media screen and (max-width: 1280px) {
+    .about__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .info {
+        position: relative;
+    }
+    .about__grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        
+    }
+}
+
+
