@@ -17,6 +17,7 @@
 
     /*========== background ==========*/
     --bg-wint-cream:#f3fbf8;
+    --bg-green-lt:#09A66D;
 }
 
 /* ========== default style ==========  */
@@ -64,10 +65,13 @@ input {
     font-family: inherit;
     font-size: inherit;
     border: none;
+    padding: 0;
 }
 
 /* ========== main style ==========  */
 .wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
 
 }
 .header {
@@ -122,8 +126,35 @@ input {
     background-position: center;
 }
 .cart {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 0 32px 0 20px;
+    background-color: var(--bg-wint-cream);
+    border-radius: 50%;
+    background-image: url(../images/cart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cart::after{
+    content: '';
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 8px;
+    right: 13px;
+    background-color: var(--bg-green-lt);
+    border-radius: 50%;
 }
 .header__link {
+    width: 160px;
+    line-height: 20px;
+    text-align: center;
+    padding: 10px 0;
 }
 .link__bg-green {
+    color: var(--color-white);
+    background-color: var(--bg-green-lt);
+    border-radius: 8px;
 }
