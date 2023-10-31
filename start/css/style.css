@@ -55,17 +55,31 @@ img {
     display: block;
 }
 
-.btn {
-    border: none;
-    outline: none;
-    background: transparent;
-}
 
 input {
     font-family: inherit;
     font-size: inherit;
     border: none;
     padding: 0;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.inner__title {
+    font-family: var(--ff-Rosario);
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90px;
+}
+
+.inner__text {
+    line-height: 30px; 
+    color: var(--color-secondary);
 }
 
 /* ========== main style ==========  */
@@ -86,8 +100,6 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.nav {
 }
 .menu {
     display: flex;
@@ -113,8 +125,6 @@ input {
 }
 .search {
     width: 0;
-}
-.btn {
 }
 .header__btn {
     width: 40px;
@@ -157,4 +167,28 @@ input {
     color: var(--color-white);
     background-color: var(--bg-green-lt);
     border-radius: 8px;
+}
+
+
+.hero {
+}
+.hero__title {
+}
+.inner__title {
+}
+.hero__text {
+}
+.inner__text {
+}
+.container {
+}
+.hero_wrapper {
+}
+.hero__img {
+}
+.hero__link {
+}
+.hero__list {
+}
+.hero__item {
 }
