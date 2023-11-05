@@ -83,6 +83,9 @@ input {
 }
 
 /* ========== main style ==========  */
+
+/* ========== Header ==========  */
+
 .wrapper {
     max-width: 1440px;
     margin: 0 auto;
@@ -169,14 +172,27 @@ input {
     border-radius: 8px;
 }
 
+/* ========== Hero ==========  */
 
 .hero {
+    background-color: var(--bg-wint-cream);
+}
+.hero__inner-wrapper {
+    background-image: url(../images/fresh-melientha-suavis-pierre-leaves-white-surface.png);
+    background-repeat:no-repeat;
+    background-position: left top;
+    padding: 93px 0 33px;
 }
 .hero__title {
+    text-align: center;
 }
 .inner__title {
+    
 }
 .hero__text {
+    text-align: center;
+    width: 637px;
+
 }
 .inner__text {
 }
