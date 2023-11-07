@@ -214,10 +214,6 @@ input {
 
 }
 
-.inner__text {}
-
-.container {}
-
 .hero_wrapper {
     display: flex;
     justify-content: space-between;
@@ -304,3 +300,103 @@ input {
     line-height: 30px;
     text-align: center;
 }
+
+/* ========== Service ==========  */
+
+.service {
+    padding: 141px 0 166px 0;
+}
+
+.servise__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container {}
+
+.service__content {
+    width: 671px;
+}
+
+.service__title {
+    margin-bottom: 20px;
+}
+
+.inner__title {}
+
+.service__text {
+    margin-bottom: 16px;
+}
+
+.inner__text {}
+
+.service__list {}
+
+.service__item {
+    width: 500px;
+    background: var(--bg-white);
+    padding: 40px 59px 40px 163px;
+}
+.service__item::before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: var(--bg-wint-cream);
+    /* top: 80%; */
+    left: 59px;
+    border-radius: 50%;
+    /* transform: translateY(-50%); */
+}
+
+.icon-delivery {
+    display: block;width: 40px;
+    height: 40px;
+    background: url(../images/delivery-man.svg) no-repeat center;
+    position: absolute;
+    /* top: 60%; */
+    left: 86px;
+    /* transform: translateY(-50%); */
+}
+.icon-order {
+    display: block;width: 40px;
+    height: 40px;
+    background: url(../images/shopping.svg) no-repeat center;
+    position: absolute;
+    /* top: 60%; */
+    left: 86px;
+    /* transform: translateY(-50%); */
+}
+.icon-time {
+    display: block;width: 40px;
+    height: 40px;
+    background: url(../images/fast-time.svg) no-repeat center;
+    position: absolute;
+    /* top: 60%; */
+    left: 86px;
+    /* transform: translateY(-50%); */
+}
+
+.service__item-title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--color-priwary);
+}
+
+.service__item-text {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--color-secondary);
+}
+
+.service__img {
+    width: 569px;
+}
+
+.images {}
