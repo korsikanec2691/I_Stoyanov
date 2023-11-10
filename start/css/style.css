@@ -17,6 +17,7 @@
     /*========== background ==========*/
     --bg-wint-cream: #f3fbf8;
     --bg-green-lt: #09A66D;
+    --bg-green-lt-op: #09a66d0d;
     --bg-white: #ffffff;
 }
 
@@ -189,6 +190,7 @@ input {
 
 /* ========== Hero ==========  */
 
+
 .hero {
     background-color: var(--bg-wint-cream);
 }
@@ -302,6 +304,7 @@ input {
 }
 
 /* ========== Service ==========  */
+
 
 .service {
     padding: 141px 0 166px 0;
@@ -464,4 +467,41 @@ input {
     }
 }
 
-.images {}
+
+/* ========== vegetable ==========  */
+
+
+.vegetable {
+    background: var(--bg-green-lt-op);
+    padding: 89px 0 14px 0;
+}
+.wrapper {
+}
+.vegetable__inner-wrapper {
+    background-image: url(../images/fresh-melientha-suavis-pierre-leaves-white-surface.png);
+    background-repeat: no-repeat;
+    background-position: right 50px bottom;
+}
+.vegetable__wrapper {
+}
+.container {
+}
+.vegetable__img {
+}
+.vegetable__content {
+}
+.vegetable__title {
+}
+.inner__title {
+}
+.vegetable__text {
+}
+.inner__text {
+}
+.vegetable__link {
+}
+.link {
+}
+
+
+
