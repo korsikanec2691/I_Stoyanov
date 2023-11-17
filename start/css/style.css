@@ -68,6 +68,7 @@ input {
     border: none;
     outline: none;
     background: transparent;
+    cursor: pointer;
 }
 
 .inner__title {
@@ -527,12 +528,15 @@ input {
 
 
 .customers {
+
+    padding: 96px 0 150px 0;
 }
 .wrapper {
 }
 .container {
 }
 .customers__slider {
+
 }
 .customers__block {
 }
@@ -545,6 +549,7 @@ input {
 }
 .customers__content {
     width: 640px;
+    padding-bottom: 34px;
 }
 .inner__title {
 }
@@ -569,4 +574,46 @@ input {
     height: 500px;
     border-radius: 50%;
     /* background: var(--bg-green-lt); */
+}
+.customers__stars {
+    display: flex;
+    gap: 9px;
+}
+.slider__btn {
+    width: 56px;
+    height: 56px;
+    background: var(--bg-white);
+    position: absolute;
+    border: 1px solid #cccccc;
+    border-radius: 50%;
+    z-index: 2;
+    bottom: 15px;
+}
+.slider__prev {
+    left: 27%;
+}
+.slider__prev::before{
+    content: '';
+    width: 36px;
+    height: 36px;
+    display: block;
+    background: url(../images/arrov-left.svg) no-repeat center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.slider__next::before{
+    content: '';
+    width: 36px;
+    height: 36px;
+    display: block;
+    background: url(../images/arov-rrr.svg) no-repeat center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.slider__next {
+    left: 34%;
 }
