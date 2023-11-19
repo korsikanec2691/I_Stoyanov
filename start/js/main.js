@@ -19,3 +19,8 @@ $('.customers__slider').slick({
 nextArrow: '<button class="btn slider__btn slider__next active"></button>',
 });
 
+$('.slider__btn').click(function(){
+  $('.slider__btn').removeClass('active');
+  $(this).addClass('active')
+})
+
