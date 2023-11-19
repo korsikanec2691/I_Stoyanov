@@ -573,8 +573,10 @@ input {
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    /* background: var(--bg-green-lt); */
+    animation: moveImg 1.5s linear infinite;
+
 }
+
 .customers__stars {
     display: flex;
     gap: 9px;
@@ -603,6 +605,15 @@ input {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.slider__prev.active {
+    background: var(--bg-green-lt);
+    border: 1px solid var(--bg-green-lt);
+
+}
+.slider__prev.active::before{
+    content: '';
+    background: url(../images/arrov-left_active-.svg) no-repeat center;
+}
 .slider__next::before{
     content: '';
     width: 36px;
@@ -616,4 +627,12 @@ input {
 }
 .slider__next {
     left: 34%;
+}
+.slider__next.active {
+    background: var(--bg-green-lt);
+    border: 1px solid var(--bg-green-lt);
+}
+.slider__next.active::before{
+    content: '';
+    background: url(../images/arov-rrr_active.svg) no-repeat center;
 }
