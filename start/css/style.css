@@ -686,9 +686,10 @@ input {
     border-radius: 50px;
     background: var(--bg-wint-cream)
 }
+
 .app__text {
-  width: 574px;  
-  margin: 20px 0 50px 0;
+    width: 574px;
+    margin: 20px 0 50px 0;
 }
 
 .app__block {
@@ -697,7 +698,9 @@ input {
     flex-wrap: wrap;
     gap: 24px;
 }
+
 span {}
+
 .app__link {
     width: 104px;
     display: block;
@@ -705,9 +708,38 @@ span {}
     border: 1px solid #a6a6a6;
     border-radius: 10%;
     padding: 5px 0;
-
+transition: .3s linear;
 }
-
-.app__store {}
-
-.app__google-play {}
+.app__link:hover {
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.35);
+    transform: skew(10deg, 0deg );
+}
+.app__store {
+    background: var(--color-bback) url(../images/aple.svg) no-repeat left 12px center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    padding-left: 34px;
+}
+.app__store span {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 6px;
+    line-height: 9px;
+    letter-spacing: .6px;
+}
+.app__google-play {
+    background: var(--color-bback) url(../images/google.svg) no-repeat left 12px center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    padding-left: 34px;
+    /* letter-spacing: .6px; */
+}
+.app__google-play span {
+    display: block;
+    font-size: 7px;
+    line-height: 7px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
